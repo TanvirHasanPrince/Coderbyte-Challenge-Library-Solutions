@@ -24,3 +24,18 @@ function LongestWord(sen) {
 
 // keep this function call here
 console.log(LongestWord(readline()));
+
+//Another Method
+function LongestWord(sen) {
+  const words = sen.match(/[a-zA-Z]+/g);
+  let longestWord = "";
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
+    }
+  }
+  return longestWord;
+}
+
+// keep this function call here
+console.log(LongestWord(readline()));
