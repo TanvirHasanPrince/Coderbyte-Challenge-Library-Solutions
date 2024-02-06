@@ -33,3 +33,25 @@ function FirstFactorial(num) {
 
 // keep this function call here
 console.log(FirstFactorial(readline()));
+
+/*
+
+factorial(1) returns 1 * 1 = 1:
+When factorial(1) is called, it hits the base case where n is 0, so it returns 1.
+This value, 1, is returned to the caller, which was factorial(2).
+Therefore, factorial(2) returns 2 * 1 = 2.
+factorial(2) returns 2 * 1 = 2:
+factorial(2) returns 2 * 1, which equals 2.
+This value, 2, is returned to the caller, which was factorial(3).
+Therefore, factorial(3) returns 3 * 2 = 6.
+factorial(3) returns 3 * 2 = 6:
+factorial(3) returns 3 * 2, which equals 6.
+This value, 6, is returned to the caller, which was factorial(4).
+Therefore, factorial(4) returns 4 * 6 = 24.
+factorial(4) returns 4 * 6 = 24:
+factorial(4) returns 4 * 6, which equals 24.
+This value, 24, is returned to the caller, which was factorial(5).
+Therefore, factorial(5) returns 5 * 24 = 120.
+
+
+*/
